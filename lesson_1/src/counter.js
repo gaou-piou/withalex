@@ -1,9 +1,17 @@
 export function setupCounter(element) {
-  let counter = 0
-  const setCounter = (count) => {
-    counter = count
-    element.innerHTML = `count is ${counter}`
-  }
-  element.addEventListener('click', () => setCounter(counter + 1))
-  setCounter(0)
+	let counter = 0
+	const setCounter = (count) => {
+		counter = count
+		element.innerHTML = `count is ${counter}`
+	}
+	element.addEventListener('click', () => setCounter(counter + 1))
+	setCounter(0)
 }
+
+const hello = (test) => {
+	alert('Hello world')
+	console.log('Hello world')
+	prompt(test)
+}
+
+hello('test')
